@@ -1,0 +1,20 @@
+{
+    "name": "nishud16/git-pre-commit-phpcs-drupal",
+    "description": "PHPCS with Drupal Coding standards check before commit",
+    "type": "scripts",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nishchit Dayal",
+            "email": "nishchitd@gmail.com"
+        }
+    ],
+    "require": {
+        "drupal/coder": "^8.3"
+    },
+    "scripts": {
+        "install-hooks": ["sh ./vendor/nishud16/git-pre-commit-phpcs-drupal/src/setup.sh"],
+        "post-install-cmd": ["@install-hooks"],
+        "post-update-cmd": ["@install-hooks"],
+    }
+}
