@@ -15,6 +15,6 @@
     "scripts": {
         "install-hooks": ["sh ./vendor/nishud16/git-pre-commit-phpcs-drupal/src/setup.sh"],
         "post-install-cmd": ["@install-hooks"],
-        "post-update-cmd": ["@install-hooks"],
+        "post-update-cmd": ["@install-hooks"]
     }
 }
